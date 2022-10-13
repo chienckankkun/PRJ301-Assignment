@@ -1,427 +1,388 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <title>Check Attend</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="css/style.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
-              integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    </head>
+<head>
+    <title>Check Attend</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
 
-    <body>
-        
-        <h1>Fpt University</h1>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">Fap </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
-                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarText">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Time Table </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">List Student</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-        <div class="container">
-            <h1>Single Activity Attendance</h1>
-            <p >Attendance for <b>ACC101</b> with Lecturer <b>sonnt</b> at Slot <b>1</b> on Day <b>2022-06-23</b> in Room <b>DE105</b> at FU-HL</p>
-            <div style="width: 100%;">
-                <form action="CheckAttend" style="position: relative;padding-bottom: 50px;" method="post">
-                    <table class="table"  >
-                        <thead>
-                            <tr>
-                                <th style="width:5%">No</th>
-                                <th style="width:5%">Group</th>
-                                <th style="width:10%">Code</th>
-                                <th style="width:17.5%">Name</th>
-                                <th style="width:12.5%">Image</th>
-                                <th style="width:5%">Status</th>
-                                <th style="width:10%">Commnent</th>
-                                <th style="width:10%">Taker</th>
-                                <th style="width:25%">RecordTime</th>
-                            </tr>
-                        </thead>
-                        <tbody>
+<body>
+
+    <h1>Fpt University</h1>
+
+    <div class="container">
+        <h1>Single Activity Attendance</h1>
+        <p>Attendance for <b>ACC101</b> with Lecturer <b>sonnt</b> at Slot <b>1</b> on Day <b>2022-06-23</b> in Room
+            <b>DE105</b> at FU-HL</p>
+        <div style="width: 100%;">
+            <form action="CheckAttend" style="position: relative;padding-bottom: 50px;" method="post">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>Group</th>
+                            <th>Code</th>
+                            <th style="width:17.5%">Name</th>
+                            <th>Image</th>
+                            <th>Status</th>
+                            <th>Commnent</th>
+                            <th>Taker</th>
+                            <th style="width:25%">RecordTime</th>
+                        </tr>
+                    </thead>
+                    <tbody>
                         <input name="sid" value="8" type="hidden">
                         <input name="instructorid" value="1" type="hidden">
-                        
-                            <tr>
-                                <td style="width:5%">10</td>
-                                <td style="width:10%">BA1623    </td>
-                                <td style="width:10%">HE156812</td>
-                                <td style="width:12.5%">To Quang Huy</td>
-                                <td style="width:12.5%"><img src="https://scr.vn/wp-content/uploads/2020/07/Avatar-Facebook-tr%E1%BA%AFng.jpg" width="150px"></td>
-                                <td style="width:5%"><input type="checkbox" class="form-check" name="HE156812"></d>
-                                <td style="width:15%"></td>
-                                <td style="width:5%">sonnt</td>    
-                                <td style="width:30%"></td>
-                            </tr>
-                        
-                            <tr>
-                                <td style="width:5%">11</td>
-                                <td style="width:10%">BA1623    </td>
-                                <td style="width:10%">HE151241</td>
-                                <td style="width:12.5%">Nguyen Huy Ba</td>
-                                <td style="width:12.5%"><img src="https://scr.vn/wp-content/uploads/2020/07/Avatar-Facebook-tr%E1%BA%AFng.jpg" width="150px"></td>
-                                <td style="width:5%"><input type="checkbox" class="form-check" name="HE151241"></d>
-                                <td style="width:15%"></td>
-                                <td style="width:5%">sonnt</td>    
-                                <td style="width:30%"></td>
-                            </tr>
-                        
-                            <tr>
-                                <td style="width:5%">58</td>
-                                <td style="width:10%">BA1623    </td>
-                                <td style="width:10%">HE150321</td>
-                                <td style="width:12.5%">Nguyen Hai Dung</td>
-                                <td style="width:12.5%"><img src="https://scr.vn/wp-content/uploads/2020/07/Avatar-Facebook-tr%E1%BA%AFng.jpg" width="150px"></td>
-                                <td style="width:5%"><input type="checkbox" class="form-check" name="HE150321"></d>
-                                <td style="width:15%"></td>
-                                <td style="width:5%">sonnt</td>    
-                                <td style="width:30%"></td>
-                            </tr>
-                        
-                            <tr>
-                                <td style="width:5%">53</td>
-                                <td style="width:10%">BA1623    </td>
-                                <td style="width:10%">HE161270</td>
-                                <td style="width:12.5%">Ha An Thai</td>
-                                <td style="width:12.5%"><img src="https://scr.vn/wp-content/uploads/2020/07/Avatar-Facebook-tr%E1%BA%AFng.jpg" width="150px"></td>
-                                <td style="width:5%"><input type="checkbox" class="form-check" name="HE161270"></d>
-                                <td style="width:15%"></td>
-                                <td style="width:5%">sonnt</td>    
-                                <td style="width:30%"></td>
-                            </tr>
-                        
-                            <tr>
-                                <td style="width:5%">54</td>
-                                <td style="width:10%">BA1623    </td>
-                                <td style="width:10%">HE163452</td>
-                                <td style="width:12.5%">Loc Tuan Hung</td>
-                                <td style="width:12.5%"><img src="https://scr.vn/wp-content/uploads/2020/07/Avatar-Facebook-tr%E1%BA%AFng.jpg" width="150px"></td>
-                                <td style="width:5%"><input type="checkbox" class="form-check" name="HE163452"></d>
-                                <td style="width:15%"></td>
-                                <td style="width:5%">sonnt</td>    
-                                <td style="width:30%"></td>
-                            </tr>
-                        
-                            <tr>
-                                <td style="width:5%">55</td>
-                                <td style="width:10%">BA1623    </td>
-                                <td style="width:10%">HE150085</td>
-                                <td style="width:12.5%">Ngo Hong Quang</td>
-                                <td style="width:12.5%"><img src="https://scr.vn/wp-content/uploads/2020/07/Avatar-Facebook-tr%E1%BA%AFng.jpg" width="150px"></td>
-                                <td style="width:5%"><input type="checkbox" class="form-check" name="HE150085"></d>
-                                <td style="width:15%"></td>
-                                <td style="width:5%">sonnt</td>    
-                                <td style="width:30%"></td>
-                            </tr>
-                        
-                            <tr>
-                                <td style="width:5%">16</td>
-                                <td style="width:10%">BA1623    </td>
-                                <td style="width:10%">HE157346</td>
-                                <td style="width:12.5%">Tran Anh Duc</td>
-                                <td style="width:12.5%"><img src="https://scr.vn/wp-content/uploads/2020/07/Avatar-Facebook-tr%E1%BA%AFng.jpg" width="150px"></td>
-                                <td style="width:5%"><input type="checkbox" class="form-check" name="HE157346"></d>
-                                <td style="width:15%"></td>
-                                <td style="width:5%">sonnt</td>    
-                                <td style="width:30%"></td>
-                            </tr>
-                        
-                            <tr>
-                                <td style="width:5%">17</td>
-                                <td style="width:10%">BA1623    </td>
-                                <td style="width:10%">HE158462</td>
-                                <td style="width:12.5%">Nguyen Trong Kieu</td>
-                                <td style="width:12.5%"><img src="https://scr.vn/wp-content/uploads/2020/07/Avatar-Facebook-tr%E1%BA%AFng.jpg" width="150px"></td>
-                                <td style="width:5%"><input type="checkbox" class="form-check" name="HE158462"></d>
-                                <td style="width:15%"></td>
-                                <td style="width:5%">sonnt</td>    
-                                <td style="width:30%"></td>
-                            </tr>
-                        
-                            <tr>
-                                <td style="width:5%">18</td>
-                                <td style="width:10%">BA1623    </td>
-                                <td style="width:10%">HE154632</td>
-                                <td style="width:12.5%">Hoang Kim Nam</td>
-                                <td style="width:12.5%"><img src="https://scr.vn/wp-content/uploads/2020/07/Avatar-Facebook-tr%E1%BA%AFng.jpg" width="150px"></td>
-                                <td style="width:5%"><input type="checkbox" class="form-check" name="HE154632"></d>
-                                <td style="width:15%"></td>
-                                <td style="width:5%">sonnt</td>    
-                                <td style="width:30%"></td>
-                            </tr>
-                        
-                            <tr>
-                                <td style="width:5%">19</td>
-                                <td style="width:10%">BA1623    </td>
-                                <td style="width:10%">HE146246</td>
-                                <td style="width:12.5%">Hoang Van An</td>
-                                <td style="width:12.5%"><img src="https://scr.vn/wp-content/uploads/2020/07/Avatar-Facebook-tr%E1%BA%AFng.jpg" width="150px"></td>
-                                <td style="width:5%"><input type="checkbox" class="form-check" name="HE146246"></d>
-                                <td style="width:15%"></td>
-                                <td style="width:5%">sonnt</td>    
-                                <td style="width:30%"></td>
-                            </tr>
-                        
-                            <tr>
-                                <td style="width:5%">21</td>
-                                <td style="width:10%">BA1623    </td>
-                                <td style="width:10%">HE158493</td>
-                                <td style="width:12.5%">Pham Van Mach</td>
-                                <td style="width:12.5%"><img src="https://scr.vn/wp-content/uploads/2020/07/Avatar-Facebook-tr%E1%BA%AFng.jpg" width="150px"></td>
-                                <td style="width:5%"><input type="checkbox" class="form-check" name="HE158493"></d>
-                                <td style="width:15%"></td>
-                                <td style="width:5%">sonnt</td>    
-                                <td style="width:30%"></td>
-                            </tr>
-                        
-                            <tr>
-                                <td style="width:5%">42</td>
-                                <td style="width:10%">BA1623    </td>
-                                <td style="width:10%">HE153583</td>
-                                <td style="width:12.5%">Le Viet Anh</td>
-                                <td style="width:12.5%"><img src="https://scr.vn/wp-content/uploads/2020/07/Avatar-Facebook-tr%E1%BA%AFng.jpg" width="150px"></td>
-                                <td style="width:5%"><input type="checkbox" class="form-check" name="HE153583"></d>
-                                <td style="width:15%"></td>
-                                <td style="width:5%">sonnt</td>    
-                                <td style="width:30%"></td>
-                            </tr>
-                        
-                            <tr>
-                                <td style="width:5%">43</td>
-                                <td style="width:10%">BA1623    </td>
-                                <td style="width:10%">HE153716</td>
-                                <td style="width:12.5%">Nguyen Thi Nam</td>
-                                <td style="width:12.5%"><img src="https://scr.vn/wp-content/uploads/2020/07/Avatar-Facebook-tr%E1%BA%AFng.jpg" width="150px"></td>
-                                <td style="width:5%"><input type="checkbox" class="form-check" name="HE153716"></d>
-                                <td style="width:15%"></td>
-                                <td style="width:5%">sonnt</td>    
-                                <td style="width:30%"></td>
-                            </tr>
-                        
-                            <tr>
-                                <td style="width:5%">24</td>
-                                <td style="width:10%">BA1623    </td>
-                                <td style="width:10%">HE158493</td>
-                                <td style="width:12.5%">Nguyen Luu Ly</td>
-                                <td style="width:12.5%"><img src="https://scr.vn/wp-content/uploads/2020/07/Avatar-Facebook-tr%E1%BA%AFng.jpg" width="150px"></td>
-                                <td style="width:5%"><input type="checkbox" class="form-check" name="HE158493"></d>
-                                <td style="width:15%"></td>
-                                <td style="width:5%">sonnt</td>    
-                                <td style="width:30%"></td>
-                            </tr>
-                        
-                            <tr>
-                                <td style="width:5%">25</td>
-                                <td style="width:10%">BA1623    </td>
-                                <td style="width:10%">HE158493</td>
-                                <td style="width:12.5%">Nguyen Thuc Quyen</td>
-                                <td style="width:12.5%"><img src="https://scr.vn/wp-content/uploads/2020/07/Avatar-Facebook-tr%E1%BA%AFng.jpg" width="150px"></td>
-                                <td style="width:5%"><input type="checkbox" class="form-check" name="HE158493"></d>
-                                <td style="width:15%"></td>
-                                <td style="width:5%">sonnt</td>    
-                                <td style="width:30%"></td>
-                            </tr>
-                        
-                            <tr>
-                                <td style="width:5%">46</td>
-                                <td style="width:10%">BA1623    </td>
-                                <td style="width:10%">HE160250</td>
-                                <td style="width:12.5%">Nguyen Ngoc Minh</td>
-                                <td style="width:12.5%"><img src="https://scr.vn/wp-content/uploads/2020/07/Avatar-Facebook-tr%E1%BA%AFng.jpg" width="150px"></td>
-                                <td style="width:5%"><input type="checkbox" class="form-check" name="HE160250"></d>
-                                <td style="width:15%"></td>
-                                <td style="width:5%">sonnt</td>    
-                                <td style="width:30%"></td>
-                            </tr>
-                        
-                            <tr>
-                                <td style="width:5%">27</td>
-                                <td style="width:10%">BA1623    </td>
-                                <td style="width:10%">HE158493</td>
-                                <td style="width:12.5%">Nguyen Hoai Thuong</td>
-                                <td style="width:12.5%"><img src="https://scr.vn/wp-content/uploads/2020/07/Avatar-Facebook-tr%E1%BA%AFng.jpg" width="150px"></td>
-                                <td style="width:5%"><input type="checkbox" class="form-check" name="HE158493"></d>
-                                <td style="width:15%"></td>
-                                <td style="width:5%">sonnt</td>    
-                                <td style="width:30%"></td>
-                            </tr>
-                        
-                            <tr>
-                                <td style="width:5%">48</td>
-                                <td style="width:10%">BA1623    </td>
-                                <td style="width:10%">HE160384</td>
-                                <td style="width:12.5%">Pham Duc Duong</td>
-                                <td style="width:12.5%"><img src="https://scr.vn/wp-content/uploads/2020/07/Avatar-Facebook-tr%E1%BA%AFng.jpg" width="150px"></td>
-                                <td style="width:5%"><input type="checkbox" class="form-check" name="HE160384"></d>
-                                <td style="width:15%"></td>
-                                <td style="width:5%">sonnt</td>    
-                                <td style="width:30%"></td>
-                            </tr>
-                        
-                            <tr>
-                                <td style="width:5%">49</td>
-                                <td style="width:10%">BA1623    </td>
-                                <td style="width:10%">HE160385</td>
-                                <td style="width:12.5%">Hoang Long</td>
-                                <td style="width:12.5%"><img src="https://scr.vn/wp-content/uploads/2020/07/Avatar-Facebook-tr%E1%BA%AFng.jpg" width="150px"></td>
-                                <td style="width:5%"><input type="checkbox" class="form-check" name="HE160385"></d>
-                                <td style="width:15%"></td>
-                                <td style="width:5%">sonnt</td>    
-                                <td style="width:30%"></td>
-                            </tr>
-                        
-                            <tr>
-                                <td style="width:5%">40</td>
-                                <td style="width:10%">BA1623    </td>
-                                <td style="width:10%">HE151136</td>
-                                <td style="width:12.5%">Hoang Thi Minh</td>
-                                <td style="width:12.5%"><img src="https://scr.vn/wp-content/uploads/2020/07/Avatar-Facebook-tr%E1%BA%AFng.jpg" width="150px"></td>
-                                <td style="width:5%"><input type="checkbox" class="form-check" name="HE151136"></d>
-                                <td style="width:15%"></td>
-                                <td style="width:5%">sonnt</td>    
-                                <td style="width:30%"></td>
-                            </tr>
-                        
-                            <tr>
-                                <td style="width:5%">41</td>
-                                <td style="width:10%">BA1623    </td>
-                                <td style="width:10%">HE151313</td>
-                                <td style="width:12.5%">Le The An</td>
-                                <td style="width:12.5%"><img src="https://scr.vn/wp-content/uploads/2020/07/Avatar-Facebook-tr%E1%BA%AFng.jpg" width="150px"></td>
-                                <td style="width:5%"><input type="checkbox" class="form-check" name="HE151313"></d>
-                                <td style="width:15%"></td>
-                                <td style="width:5%">sonnt</td>    
-                                <td style="width:30%"></td>
-                            </tr>
-                        
-                            <tr>
-                                <td style="width:5%">12</td>
-                                <td style="width:10%">BA1623    </td>
-                                <td style="width:10%">HE155672</td>
-                                <td style="width:12.5%">Trinh Ha Nam</td>
-                                <td style="width:12.5%"><img src="https://scr.vn/wp-content/uploads/2020/07/Avatar-Facebook-tr%E1%BA%AFng.jpg" width="150px"></td>
-                                <td style="width:5%"><input type="checkbox" class="form-check" name="HE155672"></d>
-                                <td style="width:15%"></td>
-                                <td style="width:5%">sonnt</td>    
-                                <td style="width:30%"></td>
-                            </tr>
-                        
-                            <tr>
-                                <td style="width:5%">13</td>
-                                <td style="width:10%">BA1623    </td>
-                                <td style="width:10%">HE142342</td>
-                                <td style="width:12.5%">Nguyen Van An</td>
-                                <td style="width:12.5%"><img src="https://scr.vn/wp-content/uploads/2020/07/Avatar-Facebook-tr%E1%BA%AFng.jpg" width="150px"></td>
-                                <td style="width:5%"><input type="checkbox" class="form-check" name="HE142342"></d>
-                                <td style="width:15%"></td>
-                                <td style="width:5%">sonnt</td>    
-                                <td style="width:30%"></td>
-                            </tr>
-                        
-                            <tr>
-                                <td style="width:5%">14</td>
-                                <td style="width:10%">BA1623    </td>
-                                <td style="width:10%">HE143232</td>
-                                <td style="width:12.5%">Dinh thi An</td>
-                                <td style="width:12.5%"><img src="https://scr.vn/wp-content/uploads/2020/07/Avatar-Facebook-tr%E1%BA%AFng.jpg" width="150px"></td>
-                                <td style="width:5%"><input type="checkbox" class="form-check" name="HE143232"></d>
-                                <td style="width:15%"></td>
-                                <td style="width:5%">sonnt</td>    
-                                <td style="width:30%"></td>
-                            </tr>
-                        
-                            <tr>
-                                <td style="width:5%">35</td>
-                                <td style="width:10%">BA1623    </td>
-                                <td style="width:10%">HE150138</td>
-                                <td style="width:12.5%">Nguyen Tuan Truong</td>
-                                <td style="width:12.5%"><img src="https://scr.vn/wp-content/uploads/2020/07/Avatar-Facebook-tr%E1%BA%AFng.jpg" width="150px"></td>
-                                <td style="width:5%"><input type="checkbox" class="form-check" name="HE150138"></d>
-                                <td style="width:15%"></td>
-                                <td style="width:5%">sonnt</td>    
-                                <td style="width:30%"></td>
-                            </tr>
-                        
-                            <tr>
-                                <td style="width:5%">36</td>
-                                <td style="width:10%">BA1623    </td>
-                                <td style="width:10%">HE150224</td>
-                                <td style="width:12.5%">Vu Hoang Tai Toan</td>
-                                <td style="width:12.5%"><img src="https://scr.vn/wp-content/uploads/2020/07/Avatar-Facebook-tr%E1%BA%AFng.jpg" width="150px"></td>
-                                <td style="width:5%"><input type="checkbox" class="form-check" name="HE150224"></d>
-                                <td style="width:15%"></td>
-                                <td style="width:5%">sonnt</td>    
-                                <td style="width:30%"></td>
-                            </tr>
-                        
-                            <tr>
-                                <td style="width:5%">37</td>
-                                <td style="width:10%">BA1623    </td>
-                                <td style="width:10%">HE150333</td>
-                                <td style="width:12.5%">Nguyen Ngoc Huy Hoang</td>
-                                <td style="width:12.5%"><img src="https://scr.vn/wp-content/uploads/2020/07/Avatar-Facebook-tr%E1%BA%AFng.jpg" width="150px"></td>
-                                <td style="width:5%"><input type="checkbox" class="form-check" name="HE150333"></d>
-                                <td style="width:15%"></td>
-                                <td style="width:5%">sonnt</td>    
-                                <td style="width:30%"></td>
-                            </tr>
-                        
-                            <tr>
-                                <td style="width:5%">38</td>
-                                <td style="width:10%">BA1623    </td>
-                                <td style="width:10%">HE150375</td>
-                                <td style="width:12.5%">Do Thi An</td>
-                                <td style="width:12.5%"><img src="https://scr.vn/wp-content/uploads/2020/07/Avatar-Facebook-tr%E1%BA%AFng.jpg" width="150px"></td>
-                                <td style="width:5%"><input type="checkbox" class="form-check" name="HE150375"></d>
-                                <td style="width:15%"></td>
-                                <td style="width:5%">sonnt</td>    
-                                <td style="width:30%"></td>
-                            </tr>
-                        
-                            <tr>
-                                <td style="width:5%">15</td>
-                                <td style="width:10%">BA1623    </td>
-                                <td style="width:10%">HE143552</td>
-                                <td style="width:12.5%">Dinh Van Nam</td>
-                                <td style="width:12.5%"><img src="https://scr.vn/wp-content/uploads/2020/07/Avatar-Facebook-tr%E1%BA%AFng.jpg" width="150px"></td>
-                                <td style="width:5%"><input type="checkbox" class="form-check" name="HE143552"></d>
-                                <td style="width:15%"></td>
-                                <td style="width:5%">sonnt</td>    
-                                <td style="width:30%"></td>
-                            </tr>
-                        
-                        <input style="position: absolute; bottom: 5px; right: 0;" type="submit" value="Submit" style="align-items: flex-end" class="btn btn-primary">
-                        </tbody>
-                    </table>
-                </form>
 
-            </div>
+                        <tr>
+                            <td>10</td>
+                            <td>GP1234 </td>
+                            <td>HE43212</td>
+                            <td>Chien Thang Kun</td>
+                            <td><img src="https://scr.vn/wp-content/uploads/2020/07/Avatar-Facebook-tr%E1%BA%AFng.jpg"
+                                    width="150px"></td>
+                            <td><input type="checkbox" class="form-check" checked name="HE156812"></d>
+                            <td>Tốt</td>
+                            <td>sonnt5</td>
+                            <td>2022-12-10</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>GP1234 </td>
+                            <td>HE43212</td>
+                            <td>Chien Thang Kun</td>
+                            <td><img src="https://scr.vn/wp-content/uploads/2020/07/Avatar-Facebook-tr%E1%BA%AFng.jpg"
+                                    width="150px"></td>
+                            <td><input type="checkbox" class="form-check" checked name="HE156812"></d>
+                            <td>Tốt</td>
+                            <td>sonnt5</td>
+                            <td>2022-12-10</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>GP1234 </td>
+                            <td>HE43212</td>
+                            <td>Chien Thang Kun</td>
+                            <td><img src="https://scr.vn/wp-content/uploads/2020/07/Avatar-Facebook-tr%E1%BA%AFng.jpg"
+                                    width="150px"></td>
+                            <td><input type="checkbox" class="form-check" checked name="HE156812"></d>
+                            <td>Tốt</td>
+                            <td>sonnt5</td>
+                            <td>2022-12-10</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>GP1234 </td>
+                            <td>HE43212</td>
+                            <td>Chien Thang Kun</td>
+                            <td><img src="https://scr.vn/wp-content/uploads/2020/07/Avatar-Facebook-tr%E1%BA%AFng.jpg"
+                                    width="150px"></td>
+                            <td><input type="checkbox" class="form-check" checked name="HE156812"></d>
+                            <td>Tốt</td>
+                            <td>sonnt5</td>
+                            <td>2022-12-10</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>GP1234 </td>
+                            <td>HE43212</td>
+                            <td>Chien Thang Kun</td>
+                            <td><img src="https://scr.vn/wp-content/uploads/2020/07/Avatar-Facebook-tr%E1%BA%AFng.jpg"
+                                    width="150px"></td>
+                            <td><input type="checkbox" class="form-check" checked name="HE156812"></d>
+                            <td>Tốt</td>
+                            <td>sonnt5</td>
+                            <td>2022-12-10</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>GP1234 </td>
+                            <td>HE43212</td>
+                            <td>Chien Thang Kun</td>
+                            <td><img src="https://scr.vn/wp-content/uploads/2020/07/Avatar-Facebook-tr%E1%BA%AFng.jpg"
+                                    width="150px"></td>
+                            <td><input type="checkbox" class="form-check" checked name="HE156812"></d>
+                            <td>Tốt</td>
+                            <td>sonnt5</td>
+                            <td>2022-12-10</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>GP1234 </td>
+                            <td>HE43212</td>
+                            <td>Chien Thang Kun</td>
+                            <td><img src="https://scr.vn/wp-content/uploads/2020/07/Avatar-Facebook-tr%E1%BA%AFng.jpg"
+                                    width="150px"></td>
+                            <td><input type="checkbox" class="form-check" checked name="HE156812"></d>
+                            <td>Tốt</td>
+                            <td>sonnt5</td>
+                            <td>2022-12-10</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>GP1234 </td>
+                            <td>HE43212</td>
+                            <td>Chien Thang Kun</td>
+                            <td><img src="https://scr.vn/wp-content/uploads/2020/07/Avatar-Facebook-tr%E1%BA%AFng.jpg"
+                                    width="150px"></td>
+                            <td><input type="checkbox" class="form-check" checked name="HE156812"></d>
+                            <td>Tốt</td>
+                            <td>sonnt5</td>
+                            <td>2022-12-10</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>GP1234 </td>
+                            <td>HE43212</td>
+                            <td>Chien Thang Kun</td>
+                            <td><img src="https://scr.vn/wp-content/uploads/2020/07/Avatar-Facebook-tr%E1%BA%AFng.jpg"
+                                    width="150px"></td>
+                            <td><input type="checkbox" class="form-check" checked name="HE156812"></d>
+                            <td>Tốt</td>
+                            <td>sonnt5</td>
+                            <td>2022-12-10</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>GP1234 </td>
+                            <td>HE43212</td>
+                            <td>Chien Thang Kun</td>
+                            <td><img src="https://scr.vn/wp-content/uploads/2020/07/Avatar-Facebook-tr%E1%BA%AFng.jpg"
+                                    width="150px"></td>
+                            <td><input type="checkbox" class="form-check" checked name="HE156812"></d>
+                            <td>Tốt</td>
+                            <td>sonnt5</td>
+                            <td>2022-12-10</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>GP1234 </td>
+                            <td>HE43212</td>
+                            <td>Chien Thang Kun</td>
+                            <td><img src="https://scr.vn/wp-content/uploads/2020/07/Avatar-Facebook-tr%E1%BA%AFng.jpg"
+                                    width="150px"></td>
+                            <td><input type="checkbox" class="form-check" checked name="HE156812"></d>
+                            <td>Tốt</td>
+                            <td>sonnt5</td>
+                            <td>2022-12-10</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>GP1234 </td>
+                            <td>HE43212</td>
+                            <td>Chien Thang Kun</td>
+                            <td><img src="https://scr.vn/wp-content/uploads/2020/07/Avatar-Facebook-tr%E1%BA%AFng.jpg"
+                                    width="150px"></td>
+                            <td><input type="checkbox" class="form-check" checked name="HE156812"></d>
+                            <td>Tốt</td>
+                            <td>sonnt5</td>
+                            <td>2022-12-10</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>GP1234 </td>
+                            <td>HE43212</td>
+                            <td>Chien Thang Kun</td>
+                            <td><img src="https://scr.vn/wp-content/uploads/2020/07/Avatar-Facebook-tr%E1%BA%AFng.jpg"
+                                    width="150px"></td>
+                            <td><input type="checkbox" class="form-check" checked name="HE156812"></d>
+                            <td>Tốt</td>
+                            <td>sonnt5</td>
+                            <td>2022-12-10</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>GP1234 </td>
+                            <td>HE43212</td>
+                            <td>Chien Thang Kun</td>
+                            <td><img src="https://scr.vn/wp-content/uploads/2020/07/Avatar-Facebook-tr%E1%BA%AFng.jpg"
+                                    width="150px"></td>
+                            <td><input type="checkbox" class="form-check" checked name="HE156812"></d>
+                            <td>Tốt</td>
+                            <td>sonnt5</td>
+                            <td>2022-12-10</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>GP1234 </td>
+                            <td>HE43212</td>
+                            <td>Chien Thang Kun</td>
+                            <td><img src="https://scr.vn/wp-content/uploads/2020/07/Avatar-Facebook-tr%E1%BA%AFng.jpg"
+                                    width="150px"></td>
+                            <td><input type="checkbox" class="form-check" checked name="HE156812"></d>
+                            <td>Tốt</td>
+                            <td>sonnt5</td>
+                            <td>2022-12-10</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>GP1234 </td>
+                            <td>HE43212</td>
+                            <td>Chien Thang Kun</td>
+                            <td><img src="https://scr.vn/wp-content/uploads/2020/07/Avatar-Facebook-tr%E1%BA%AFng.jpg"
+                                    width="150px"></td>
+                            <td><input type="checkbox" class="form-check" checked name="HE156812"></d>
+                            <td>Tốt</td>
+                            <td>sonnt5</td>
+                            <td>2022-12-10</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>GP1234 </td>
+                            <td>HE43212</td>
+                            <td>Chien Thang Kun</td>
+                            <td><img src="https://scr.vn/wp-content/uploads/2020/07/Avatar-Facebook-tr%E1%BA%AFng.jpg"
+                                    width="150px"></td>
+                            <td><input type="checkbox" class="form-check" checked name="HE156812"></d>
+                            <td>Tốt</td>
+                            <td>sonnt5</td>
+                            <td>2022-12-10</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>GP1234 </td>
+                            <td>HE43212</td>
+                            <td>Chien Thang Kun</td>
+                            <td><img src="https://scr.vn/wp-content/uploads/2020/07/Avatar-Facebook-tr%E1%BA%AFng.jpg"
+                                    width="150px"></td>
+                            <td><input type="checkbox" class="form-check" checked name="HE156812"></d>
+                            <td>Tốt</td>
+                            <td>sonnt5</td>
+                            <td>2022-12-10</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>GP1234 </td>
+                            <td>HE43212</td>
+                            <td>Chien Thang Kun</td>
+                            <td><img src="https://scr.vn/wp-content/uploads/2020/07/Avatar-Facebook-tr%E1%BA%AFng.jpg"
+                                    width="150px"></td>
+                            <td><input type="checkbox" class="form-check" checked name="HE156812"></d>
+                            <td>Tốt</td>
+                            <td>sonnt5</td>
+                            <td>2022-12-10</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>GP1234 </td>
+                            <td>HE43212</td>
+                            <td>Chien Thang Kun</td>
+                            <td><img src="https://scr.vn/wp-content/uploads/2020/07/Avatar-Facebook-tr%E1%BA%AFng.jpg"
+                                    width="150px"></td>
+                            <td><input type="checkbox" class="form-check" checked name="HE156812"></d>
+                            <td>Tốt</td>
+                            <td>sonnt5</td>
+                            <td>2022-12-10</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>GP1234 </td>
+                            <td>HE43212</td>
+                            <td>Chien Thang Kun</td>
+                            <td><img src="https://scr.vn/wp-content/uploads/2020/07/Avatar-Facebook-tr%E1%BA%AFng.jpg"
+                                    width="150px"></td>
+                            <td><input type="checkbox" class="form-check" checked name="HE156812"></d>
+                            <td>Tốt</td>
+                            <td>sonnt5</td>
+                            <td>2022-12-10</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>GP1234 </td>
+                            <td>HE43212</td>
+                            <td>Chien Thang Kun</td>
+                            <td><img src="https://scr.vn/wp-content/uploads/2020/07/Avatar-Facebook-tr%E1%BA%AFng.jpg"
+                                    width="150px"></td>
+                            <td><input type="checkbox" class="form-check" checked name="HE156812"></d>
+                            <td>Tốt</td>
+                            <td>sonnt5</td>
+                            <td>2022-12-10</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>GP1234 </td>
+                            <td>HE43212</td>
+                            <td>Chien Thang Kun</td>
+                            <td><img src="https://scr.vn/wp-content/uploads/2020/07/Avatar-Facebook-tr%E1%BA%AFng.jpg"
+                                    width="150px"></td>
+                            <td><input type="checkbox" class="form-check" checked name="HE156812"></d>
+                            <td>Tốt</td>
+                            <td>sonnt5</td>
+                            <td>2022-12-10</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>GP1234 </td>
+                            <td>HE43212</td>
+                            <td>Chien Thang Kun</td>
+                            <td><img src="https://scr.vn/wp-content/uploads/2020/07/Avatar-Facebook-tr%E1%BA%AFng.jpg"
+                                    width="150px"></td>
+                            <td><input type="checkbox" class="form-check" checked name="HE156812"></d>
+                            <td>Tốt</td>
+                            <td>sonnt5</td>
+                            <td>2022-12-10</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>GP1234 </td>
+                            <td>HE43212</td>
+                            <td>Chien Thang Kun</td>
+                            <td><img src="https://scr.vn/wp-content/uploads/2020/07/Avatar-Facebook-tr%E1%BA%AFng.jpg"
+                                    width="150px"></td>
+                            <td><input type="checkbox" class="form-check" checked name="HE156812"></d>
+                            <td>Tốt</td>
+                            <td>sonnt5</td>
+                            <td>2022-12-10</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>GP1234 </td>
+                            <td>HE43212</td>
+                            <td>Chien Thang Kun</td>
+                            <td><img src="https://scr.vn/wp-content/uploads/2020/07/Avatar-Facebook-tr%E1%BA%AFng.jpg"
+                                    width="150px"></td>
+                            <td><input type="checkbox" class="form-check" checked name="HE156812"></d>
+                            <td>Tốt</td>
+                            <td>sonnt5</td>
+                            <td>2022-12-10</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>GP1234 </td>
+                            <td>HE43212</td>
+                            <td>Chien Thang Kun</td>
+                            <td><img src="https://scr.vn/wp-content/uploads/2020/07/Avatar-Facebook-tr%E1%BA%AFng.jpg"
+                                    width="150px"></td>
+                            <td><input type="checkbox" class="form-check" checked name="HE156812"></d>
+                            <td>Tốt</td>
+                            <td>sonnt5</td>
+                            <td>2022-12-10</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+                <input type="submit" value="Submit" class="btn btn-primary">
+
+            </form>
+
         </div>
+    </div>
 
 
 
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-                integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
-                integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
-                integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-    </body>
+</body>
 
 </html>
