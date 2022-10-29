@@ -16,7 +16,6 @@ import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
-import model.Check;
 import model.Slot;
 import model.Student;
 
@@ -46,7 +45,7 @@ public class CheckAttend extends HttpServlet {
                 String sid = request.getParameter("sid");
 
                 SlotDAO sdao = new SlotDAO();
-                ArrayList<Check> cklist = cadao.getAllStudent(Integer.valueOf(sid));
+                ArrayList<model.CheckAttend> cklist = cadao.getAllStudent(Integer.valueOf(sid));
                 Slot s = sdao.getSlotById(Integer.valueOf(sid));
                 ArrayList<Student> stulist = studao.getAllStudent(s.getGroup().getCode());
                 request.setAttribute("cklist", cklist);
@@ -60,7 +59,7 @@ public class CheckAttend extends HttpServlet {
                 StudentDAO studao = new StudentDAO();
                 String sid = request.getParameter("sid");
                 SlotDAO sdao = new SlotDAO();
-                ArrayList<Check> cklist = cadao.getAllStudent(Integer.valueOf(sid));
+                ArrayList<model.CheckAttend> cklist = cadao.getAllStudent(Integer.valueOf(sid));
                 Slot s = sdao.getSlotById(Integer.valueOf(sid));
                 ArrayList<Student> stulist = studao.getAllStudent(s.getGroup().getCode());
                 request.setAttribute("cklist", cklist);

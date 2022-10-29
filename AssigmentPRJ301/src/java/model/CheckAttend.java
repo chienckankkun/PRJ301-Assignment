@@ -8,7 +8,7 @@ package model;
  *
  * @author CHIEN
  */
-public class Check {
+public class CheckAttend {
      int id;
     Slot slot;
     boolean check;
@@ -17,7 +17,7 @@ public class Check {
     String taker;
     String recordtime;
 
-    public Check(int id, Slot slot, boolean check, String comment, Student student, String taker, String recordtime) {
+    public CheckAttend(int id, Slot slot, boolean check, String comment, Student student, String taker, String recordtime) {
         this.id = id;
         this.slot = slot;
         this.check = check;
