@@ -1,19 +1,22 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Servlet.java to edit this template
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
  */
 package controller;
 
+import dal.SlotDAO;
 import java.io.IOException;
 import java.io.PrintWriter;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import model.Slot;
 
 /**
  *
- * @author CHIEN
+ * @author Admin
  */
 public class Schedule extends HttpServlet {
 
@@ -29,18 +32,22 @@ public class Schedule extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
-        try ( PrintWriter out = response.getWriter()) {
-            /* TODO output your page here. You may use following sample code. */
-            out.println("<!DOCTYPE html>");
-            out.println("<html>");
-            out.println("<head>");
-            out.println("<title>Servlet Schedule</title>");            
-            out.println("</head>");
-            out.println("<body>");
-            out.println("<h1>Servlet Schedule at " + request.getContextPath() + "</h1>");
-            out.println("</body>");
-            out.println("</html>");
-        }
+        SlotDAO sdao = new SlotDAO();
+        Slot sl1 = sdao.getSlotById(8);
+        Slot sl2 = sdao.getSlotById(2);
+        Slot sl3 = sdao.getSlotById(1);
+        Slot sl4 = sdao.getSlotById(4);
+        Slot sl5 = sdao.getSlotById(12);
+        Slot sl6 = sdao.getSlotById(7);
+        Slot sl7 = sdao.getSlotById(11);
+        request.setAttribute("s1", sl1);
+        request.setAttribute("s2", sl2);
+        request.setAttribute("s3", sl3);
+        request.setAttribute("s4", sl4);
+        request.setAttribute("s5", sl5);
+        request.setAttribute("s6", sl6);
+        request.setAttribute("s7", sl7);
+        request.getRequestDispatcher("thoikhoabieu.jsp").forward(request, response);
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">

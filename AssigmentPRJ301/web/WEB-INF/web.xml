@@ -9,20 +9,12 @@
         <servlet-class>controller.Check</servlet-class>
     </servlet>
     <servlet>
-        <servlet-name>TimeTable</servlet-name>
+        <servlet-name>Schedule</servlet-name>
         <servlet-class>controller.Schedule</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>CheckAttend</servlet-name>
         <servlet-class>controller.CheckAttend</servlet-class>
-    </servlet>
-    <servlet>
-        <servlet-name>GroupStudent</servlet-name>
-        <servlet-class>controller.GroupStudent</servlet-class>
-    </servlet>
-    <servlet>
-        <servlet-name>TeachingSchedule</servlet-name>
-        <servlet-class>controller.TeachingSchedule</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>UpdateCheckattend</servlet-name>
@@ -37,24 +29,21 @@
         <url-pattern>/CheckAttend</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
-        <servlet-name>GroupStudent</servlet-name>
-        <url-pattern>/GroupStudent</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>TeachingSchedule</servlet-name>
-        <url-pattern>/TeachingSchedule</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
         <servlet-name>UpdateCheckattend</servlet-name>
         <url-pattern>/UpdateCheckattend</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
-        <servlet-name>Timetable</servlet-name>
-        <url-pattern>/Timetable</url-pattern>
+        <servlet-name>Schedule</servlet-name>
+        <url-pattern>/Schedule</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
             30
         </session-timeout>
     </session-config>
+    <welcome-file-list>
+        <welcome-file>
+            Schedule
+        </welcome-file>
+    </welcome-file-list>
 </web-app>
