@@ -16,8 +16,8 @@ import model.*;
  */
 public class CheckAttendDAO extends DBContext {
 
-    public ArrayList<CheckAttend> getAllStudent(int sid) {
-        ArrayList<CheckAttend> alist = new ArrayList<>();
+    public ArrayList<CheckingAttend> getAllStudent(int sid) {
+        ArrayList<CheckingAttend> alist = new ArrayList<>();
         String sql = "  select * from CheckAttedance ca , Student s\n"
                 + "  where ca.[SID]= s.SID  and ca.SlotID = ?";
         try {
@@ -28,7 +28,7 @@ public class CheckAttendDAO extends DBContext {
                 Slot s = new Slot();
                 s.setId(rs.getInt(2));
                 Student stu = new Student(rs.getInt(8), rs.getString(9), rs.getString(10), rs.getBoolean(11), rs.getString(12));
-                CheckAttend c = new CheckAttend(rs.getInt(1), s, rs.getBoolean(4), rs.getString(5), stu, rs.getString(6), rs.getString(7));
+                CheckingAttend c = new CheckingAttend(rs.getInt(1), s, rs.getBoolean(4), rs.getString(5), stu, rs.getString(6), rs.getString(7));
                 alist.add(c);
             }
         } catch (Exception e) {

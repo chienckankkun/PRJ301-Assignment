@@ -1,14 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
     <servlet>
-        <servlet-name>ListStudent</servlet-name>
-        <servlet-class>controller.DisplayGroup</servlet-class>
-    </servlet>
-    <servlet>
-        <servlet-name>Attendance</servlet-name>
-        <servlet-class>controller.Check</servlet-class>
-    </servlet>
-    <servlet>
         <servlet-name>Schedule</servlet-name>
         <servlet-class>controller.Schedule</servlet-class>
     </servlet>
@@ -20,10 +12,10 @@
         <servlet-name>UpdateCheckattend</servlet-name>
         <servlet-class>controller.UpdateCheckattend</servlet-class>
     </servlet>
-    <servlet>
-        <servlet-name>Timetable</servlet-name>
-        <servlet-class>controller.Timetable</servlet-class>
-    </servlet>
+    <servlet-mapping>
+        <servlet-name>Schedule</servlet-name>
+        <url-pattern>/Schedule</url-pattern>
+    </servlet-mapping>
     <servlet-mapping>
         <servlet-name>CheckAttend</servlet-name>
         <url-pattern>/CheckAttend</url-pattern>
@@ -31,10 +23,6 @@
     <servlet-mapping>
         <servlet-name>UpdateCheckattend</servlet-name>
         <url-pattern>/UpdateCheckattend</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>Schedule</servlet-name>
-        <url-pattern>/Schedule</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
